@@ -3,6 +3,8 @@
 We'd like you to build a list of shows that can be filtered by genre. You can use whatever frameworks or libraries you wish,
 there are starter templates for Vanilla JS, jQuery and React in branches on this repo. 
 
+Please commit to git as you go so that we can see your workings, and submit as a git repo when finished. 
+
 ![design](design.jpg)
 
 On initial load 'All' should be pre-selected, and all shows should be shown.

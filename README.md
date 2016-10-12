@@ -1,7 +1,7 @@
 ## Front-End Tech Test
 
 We'd like you to build a list of shows that can be filtered by genre. You can use whatever frameworks or libraries you wish,
-there are starter templates for Plain JS, jQuery and React in branches on this repo. 
+there are starter templates for Vanilla JS, jQuery and React in branches on this repo. 
 
 ![design](design.jpg)
 

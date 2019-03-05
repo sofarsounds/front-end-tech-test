@@ -8,8 +8,8 @@ The aim of the test is to develop a Javascript application for displaying a list
 
 ## Bonus Points
  - We would like to see your journey, so please use your git commits to tell us a story
- - We love TDD so some kind of test suite is a plus. We don't need a full test suite but some tests covering the important logic would be better
- - If you can't achieve everything in the time use the readme to tell us what you would do next.
+ - We love TDD so some kind of test suite is a plus, we aren't expecting a full test suite 
+ - If you can't achieve everything in the time use the readme to tell us what you would do next
 
 ## Assets
 In this repository you will find the assets required to replicated the design attached:

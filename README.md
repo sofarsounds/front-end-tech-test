@@ -1,31 +1,23 @@
-## Front-End Tech Test
+The aim of the test is to develop a Javascript application for displaying a list of upcoming Sofar events that can be filtered by genre. You can use any frontend frameworks.
 
-We'd like you to build a list of shows that can be filtered by genre. You can use whatever frameworks or libraries you wish,
-there are starter templates for Vanilla JS, jQuery and React in separate branches on this repository. It shouldn't take more than a couple of hours to complete.
+## What the application should do:
+ - On initial load, ’All' should be pre-selected, and every show should be displayed
+ - Subsequently, if a genre filter is selected, only shows of that genre should be displayed
 
-Please commit to git as you go so that we can see your workings, and submit as a git repo when finished.
+# Bonus Points
+ - We would like to see your journey, so please use your git commits to tell us a story
+ - We love TDD so some kind of test suite is a plus. We don't need a full test suite but some tests covering the important logic would be better
+ - If you can't achieve everything in the time use the readme to tell us what you would do next.
 
-![design](design.jpg)
+## Assets
+In this repository you will find the assets required to replicated the design attached:
 
-On initial load 'All' should be pre-selected, and all shows should be shown.
+- `./data/shows.json`: A JSON file structured with the data required for the design
+- `./img`: The Sofar Sounds logo, a banner image for the header and the arrow icon
 
-Subsequently, if a genre filter is selected, only shows of that genre should be shown.
+Brand
+- Typeface: Open Sans
+- Brand Colour: #10ad52
 
-----------------------------
+_It shouldn’t take more than a couple of hours to complete_
 
-In this repo you will find:
-
-#### Mock Data
-
-A JSON file with some shows. It has been structured specifically for the design shown.
-
-`./data/shows.json`
-
-#### Images
-
-In `./img` you will find the Sofar Sounds logo, a banner image for the header and the arrow icon.
-
-## Resources
-
-- Typeface: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
-- Brand Color: `#10ad52`

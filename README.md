@@ -1,5 +1,7 @@
 The aim of the test is to develop a Javascript application for displaying a list of upcoming Sofar events that can be filtered by genre. You can use any frontend frameworks.
 
+![design](design.jpg)
+
 ## What the application should do:
  - On initial load, ’All' should be pre-selected, and every show should be displayed
  - Subsequently, if a genre filter is selected, only shows of that genre should be displayed

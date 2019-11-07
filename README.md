@@ -1,25 +1,59 @@
-The aim of the test is to develop a Javascript application for displaying a list of upcoming Sofar events that can be filtered by genre. You can use any frontend frameworks.
+# Sofar Sounds Tech Test
 
-## What the application should do:
- - On initial load, ’All' should be pre-selected, and every show should be displayed
- - Subsequently, if a genre filter is selected, only shows of that genre should be displayed
+The product manager has asked you to build a production ready listing page. Please read the
+instructions carefully and do not spend more than one evening on it. Whatever you can't complete
+in time, please write up a quick readme file with what you would have done in addition.
 
-![design](design.jpg)
+Please make sure you include instructions on how to run your project.
 
-## Bonus Points
- - We would like to see your journey, so please use your git commits to tell us a story
- - We love TDD so some kind of test suite is a plus, we aren't expecting a full test suite 
- - If you can't achieve everything in the time use the readme to tell us what you would do next
+## What you will be building
+
+![design](mockup.jpg)
+
+## Product Requirements
+- The application should match the design mockup below. It doesn't have to be pixel perfect
+- On initial load, no filters should be active and all events should be displayed
+- The user can filter by both city and date at the same time
+- To filter the events, the user has to click the "apply" button
+- The "Reset Filters" button only appears when at least one filter is active
+- When the user clicks on an event card they are redirected to the sofar sounds event page
+
+## Tech Requirements
+- Please use React (create-react-app is a great starting point)
+- It should be typed (Typescript or Flow)
+- When the events are filtered, no new request is being made to the API
+- The application should be tested to a degree you feel is necessary for production
+- If you can, dockerise the app
+
+You can use anything for styling, however we use [https://styled-components.com](styled-components)
+for the new generation frontend.
+
+## API Documentation
+
+You will be developing against our staging api which has some demo data setup.
+
+**Request**
+```
+GET https://app.staging.sofarsounds.com/api/v2/events
+```
+
+**Example Response:**
+```
+{
+  "id": 1,
+  "city": "Oxford",
+  "image_url": "url-to-the-image.jpg",
+  "start_time": "2019-11-07T20:00:00.000Z",
+  "arrival_time": "19:30",
+  "event_url": "https://url-to-the-event",
+}
+```
 
 ## Assets
 In this repository you will find the assets required to replicated the design attached:
 
-- `./data/shows.json`: A JSON file structured with the data required for the design
-- `./img`: The Sofar Sounds logo, a banner image for the header and the arrow icon
+- `./img`: The Sofar Sounds logo and a banner image for the header
 
-Brand
+## Brand
 - Typeface: Open Sans
 - Brand Colour: #10ad52
-
-_It shouldn’t take more than a couple of hours to complete_
-

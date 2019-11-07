@@ -35,7 +35,7 @@ You will be developing against our staging api which has some demo data setup.
 
 **Request**
 ```
-GET https://app.staging.sofarsounds.com/api/v2/events
+GET https://app.staging.sofarsounds.com/api/v1/events
 ```
 
 **Example Response:**

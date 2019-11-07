@@ -13,7 +13,7 @@ Please make sure you include instructions on how to run your project.
 ## Product Requirements
 - The application should match the design mockup above
 - On initial load, no filters should be active and all events should be displayed
-- To filter the events, the user has to click the "apply" button
+- To filter the events, the user has to click the "search" button
 - The user can filter by both city and date at the same time
 - The "Reset Filters" button only appears when at least one filter is active
 - Clicking on "Reset Filters" removes all currently active filters

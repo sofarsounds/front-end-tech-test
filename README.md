@@ -35,7 +35,7 @@ You will be developing against our staging api which has some demo data setup.
 
 **Request**
 ```
-curl -k -X POST -H "Content-Type: application/json" -d '{"query": "{ events(page: 1, perPage: 2) { events { id guestsArriveAt startsAt endsAt price city { id title } } } }"}' https://dev.sofarsounds.com/api/v2/graphql
+curl -k -X POST -H "Content-Type: application/json" -d '{"query": "{ events(page: 1, perPage: 2) { events { id guestsArriveAt startsAt endsAt price imageUrl city { id title } } } }"}' https://dev.sofarsounds.com/api/v2/graphql
 ```
 
 **Example Response:**
@@ -50,6 +50,7 @@ curl -k -X POST -H "Content-Type: application/json" -d '{"query": "{ events(page
           "startsAt": "2009-03-15T12:00:00Z",
           "endsAt": null,
           "price": 13.0,
+          "imageUrl": "//dax2lgcd0wbaz.cloudfront.net/assets/event/bkg-event-header-d08f1c0b25ba5df9d48ae68f21ccb013701bc7023645a25ad281ae669ce7a0f3.jpg",
           "city": {
             "id": 48,
             "title": "London"
@@ -61,6 +62,7 @@ curl -k -X POST -H "Content-Type: application/json" -d '{"query": "{ events(page
           "startsAt": "2009-05-15T11:00:00Z",
           "endsAt": null,
           "price": 20.0,
+          "imageUrl": "//dax2lgcd0wbaz.cloudfront.net/assets/event/bkg-event-header-d08f1c0b25ba5df9d48ae68f21ccb013701bc7023645a25ad281ae669ce7a0f3.jpg",
           "city": {
             "id": 48,
             "title": "London"

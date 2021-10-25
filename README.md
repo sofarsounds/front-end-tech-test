@@ -35,7 +35,7 @@ You will be developing against our staging api which has some demo data setup.
 
 **Request**
 ```
-curl -k -X POST -H "Content-Type: application/json" -d '{"query": "{ events(page: 1, perPage: 2) { events { id guestsArriveAt startsAt endsAt price city { id title } venue { id venueName address  } } } }"}' https://dev.sofarsounds.com/api/v2/graphql
+curl -k -X POST -H "Content-Type: application/json" -d '{"query": "{ events(page: 1, perPage: 2) { events { id guestsArriveAt startsAt endsAt price city { id title } } } }"}' https://dev.sofarsounds.com/api/v2/graphql
 ```
 
 **Example Response:**
@@ -54,11 +54,6 @@ curl -k -X POST -H "Content-Type: application/json" -d '{"query": "{ events(page
             "id": 48,
             "title": "London"
           },
-          "venue": {
-            "id":14,
-            "venueName": null,
-            "address": null
-          }
         },
         {
           "id": 1710,
@@ -70,11 +65,6 @@ curl -k -X POST -H "Content-Type: application/json" -d '{"query": "{ events(page
             "id": 48,
             "title": "London"
           },
-          "venue": {
-            "id": 14,
-            "venueName": null,
-            "address": null
-          }
         },
       ]
     }

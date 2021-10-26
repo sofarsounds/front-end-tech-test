@@ -35,18 +35,42 @@ You will be developing against our staging api which has some demo data setup.
 
 **Request**
 ```
-GET https://app.staging.sofarsounds.com/api/v1/events
+curl -k -X POST -H "Content-Type: application/json" -d '{"query": "{ events(page: 1, perPage: 2) { events { id guestsArriveAt startsAt endsAt price imageUrl city { id title } } } }"}' https://dev.sofarsounds.com/api/v2/graphql
 ```
 
 **Example Response:**
 ```
 {
-  "id": 1,
-  "city": "Oxford",
-  "image_url": "url-to-the-image.jpg",
-  "start_time": "2019-11-07T20:00:00.000Z",
-  "arrival_time": "19:30",
-  "event_url": "https://url-to-the-event",
+  "data": {
+    "events": {
+      "events":[
+        {
+          "id": 1709,
+          "guestsArriveAt": null,
+          "startsAt": "2009-03-15T12:00:00Z",
+          "endsAt": null,
+          "price": 13.0,
+          "imageUrl": "//dax2lgcd0wbaz.cloudfront.net/assets/event/bkg-event-header-d08f1c0b25ba5df9d48ae68f21ccb013701bc7023645a25ad281ae669ce7a0f3.jpg",
+          "city": {
+            "id": 48,
+            "title": "London"
+          },
+        },
+        {
+          "id": 1710,
+          "guestsArriveAt": null,
+          "startsAt": "2009-05-15T11:00:00Z",
+          "endsAt": null,
+          "price": 20.0,
+          "imageUrl": "//dax2lgcd0wbaz.cloudfront.net/assets/event/bkg-event-header-d08f1c0b25ba5df9d48ae68f21ccb013701bc7023645a25ad281ae669ce7a0f3.jpg",
+          "city": {
+            "id": 48,
+            "title": "London"
+          },
+        },
+      ]
+    }
+  }
 }
 ```
 

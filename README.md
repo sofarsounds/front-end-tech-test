@@ -21,10 +21,9 @@ Please make sure you include instructions on how to run your project.
 
 ## Tech Requirements
 - Please use React (create-react-app is a great starting point)
-- It should be typed (Typescript or Flow)
-- When the events are filtered, no new request is being made to the API
+- You may consider making it typed (Typescript or Flow)
+- When the events are filtered, no new request needs to be made to the API
 - The application should be tested to a degree you feel is necessary for production
-- If you can, dockerise the app
 
 You can use anything for styling, however we use [https://styled-components.com](styled-components)
 for the new generation frontend.
